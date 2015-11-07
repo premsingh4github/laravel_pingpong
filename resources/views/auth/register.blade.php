@@ -1,65 +1,92 @@
-@extends('app')
-
+<!-- by prem kumar singh @ 2015/10/29 -->
+@extends('index')
 @section('content')
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
-				<div class="panel-heading">Register</div>
-				<div class="panel-body">
-					@if (count($errors) > 0)
-						<div class="alert alert-danger">
-							<strong>Whoops!</strong> There were some problems with your input.<br><br>
-							<ul>
-								@foreach ($errors->all() as $error)
-									<li>{{ $error }}</li>
-								@endforeach
-							</ul>
-						</div>
-					@endif
-
-					<form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/register') }}">
-						<input type="hidden" name="_token" value="{{ csrf_token() }}">
-
-						<div class="form-group">
-							<label class="col-md-4 control-label">Name</label>
-							<div class="col-md-6">
-								<input type="text" class="form-control" name="name" value="{{ old('name') }}">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-md-4 control-label">E-Mail Address</label>
-							<div class="col-md-6">
-								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-md-4 control-label">Password</label>
-							<div class="col-md-6">
-								<input type="password" class="form-control" name="password">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-md-4 control-label">Confirm Password</label>
-							<div class="col-md-6">
-								<input type="password" class="form-control" name="password_confirmation">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary">
-									Register
-								</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
+  <section class="title">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span6">
+          <h1>Registration</h1>
+        </div>
+        <div class="span6">
+          <ul class="breadcrumb pull-right">
+            <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+            <!-- <li><a href="#">Pages</a> <span class="divider">/</span></li> -->
+            <li class="active">Registration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / .title -->  
+  
+<section id="registration-page" class="container">
+	@if (count($errors) > 0)
+		<div class="alert alert-danger">
+			<strong>Whoops!</strong> There were some problems with your input.<br><br>
+			<ul>
+				@foreach ($errors->all() as $error)
+					<li>{{ $error }}</li>
+				@endforeach
+			</ul>
 		</div>
-	</div>
-</div>
+	@endif
+	
+    <form class="center" method="POST" action="{{ url('register') }}">
+		@if(Session::has('success_message'))
+			<div class="alert alert-success">
+				{{Session::get('success_message')}}
+			</div>
+		@endif
+      <input type="hidden" name="_token" value="{{ csrf_token() }}">
+      <fieldset class="registration-form">
+        <div class="control-group">
+          <!-- Username -->
+          <div class="controls">
+            <input type="text" required name="name" value="{{ old('name')}}" placeholder="Name" class="input-xlarge">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <!-- E-mail -->
+          <div class="controls">
+            <input type="email" id="email" name="email" value="{{ old('email')}}" placeholder="E-mail" class="input-xlarge">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <!-- Password-->
+          <div class="controls">
+            <input type="password" id="password" name="password" placeholder="Password" class="input-xlarge">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <!-- Password -->
+          <div class="controls">
+            <input type="password" id="password_confirm" name="password_confirmation" placeholder="Password (Confirm)" class="input-xlarge">
+          </div>
+        </div>
+        <div class="control-group">
+          <!-- Password -->
+          <div class="controls">
+          	@if(old('how_know'))
+          	<textarea placeholder="How do you know about us?" name="how_know"  required="required" class="input-block-level">{{ old('how_know') }}</textarea>
+          	@else
+          	<textarea placeholder="How do you know about us?" name="how_know"  required="required" class="input-block-level"></textarea>
+          	@endif
+            
+          </div>
+        </div>
+
+        <div class="control-group">
+          <!-- Button -->
+          <div class="controls">
+            <button class="btn btn-success btn-large btn-block">Register</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </section>
+  <!-- /#registration-page -->
+
 @endsection

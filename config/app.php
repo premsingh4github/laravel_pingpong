@@ -144,7 +144,8 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
-
+		// for pingpong
+		'Pingpong\Modules\ModulesServiceProvider',
 	],
 
 	/*
@@ -192,6 +193,8 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+		// for pingpong
+		'Module' => 'Pingpong\Modules\Facades\Module',
 
 	],
 

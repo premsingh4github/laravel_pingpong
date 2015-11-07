@@ -15,7 +15,7 @@
                         <img class="pull-right" src="images/slider/img2.png" alt="" />
                         <h2>Creative Ideas</h2>
                         <h3 class="gap">Tincidunt condimentum eros</h3>
-                        <a class="btn btn-large "  href="{{ url('/register') }}">Free Registration!</a>
+                        <a class="btn btn-large "  href="{{ url('authentication/register') }}">Free Registration!</a>
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@
                         <h2>Planning &amp; Analysis</h2>
                         <h3 class="gap">Aenean ultricies mi vitast</h3>
                         <!-- <a class="btn btn-large btn-transparent" href="#">Learn More</a> -->
-                        <a class="btn btn-large "  href="{{ url('/register') }}">Free Registration!</a>
+                        <a class="btn btn-large "  href="{{ url('authentication/register') }}">Free Registration!</a>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                     <h2>Unique Solutions</h2>
                     <h3 class="gap">Breatures who have been utterly</h3>
                     <!-- <a class="btn btn-large btn-transparent" href="#">Learn More</a> -->
-                    <a class="btn btn-large "  href="{{ url('/register') }}">Free Registration!</a>
+                    <a class="btn btn-large "  href="{{ url('authentication/register') }}">Free Registration!</a>
                 </div>
             </div>
         </div>

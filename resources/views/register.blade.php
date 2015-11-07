@@ -19,19 +19,20 @@
   </section>
   <!-- / .title -->  
 <section id="registration-page" class="container">
-    <form class="center" action='' method="POST">
+    <form class="center" method="POST" action="{{ url('authentication/register') }}">
+      <input type="hidden" name="_token" value="{{ csrf_token() }}">
       <fieldset class="registration-form">
         <div class="control-group">
           <!-- Username -->
-          <div class="controls">
+          <!-- <div class="controls">
             <input type="text" id="username" name="username" placeholder="Username" class="input-xlarge">
-          </div>
+          </div> -->
         </div>
 
         <div class="control-group">
           <!-- E-mail -->
           <div class="controls">
-            <input type="text" id="email" name="email" placeholder="E-mail" class="input-xlarge">
+            <input type="email" id="email" name="email" placeholder="E-mail" class="input-xlarge">
           </div>
         </div>
 
@@ -46,6 +47,12 @@
           <!-- Password -->
           <div class="controls">
             <input type="password" id="password_confirm" name="password_confirm" placeholder="Password (Confirm)" class="input-xlarge">
+          </div>
+        </div>
+        <div class="control-group">
+          <!-- Password -->
+          <div class="controls">
+            <textarea placeholder="How do you know about us?" name="message"  required="required" class="input-block-level"></textarea>
           </div>
         </div>
 

@@ -29,11 +29,18 @@ class Registrar implements RegistrarContract {
 	 */
 	public function create(array $data)
 	{
-		return User::create([
-			'name' => $data['name'],
-			'email' => $data['email'],
-			'password' => bcrypt($data['password']),
-		]);
+		$user = new User;
+		$activation_code = str_random(60) . $data['email'];
+		$user->name = $data['name'];
+		$user->email = $data['email'];
+		$user->password = bcrypt($data['password']);
+		$user->how_know = $data['how_know'];
+		$user->activation_code = $activation_code;
+		if($user->save()){
+			\Session::flash('success_message',"Activation link is send to {$data['email']}. Please activite your account");
+			return view('auth.register');
+		}
+		
 	}
 
 }

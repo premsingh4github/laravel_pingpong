@@ -10,13 +10,13 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/sl-slide.css">
+    <link rel="stylesheet" href="{{url('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url('css/bootstrap-responsive.min.css')}}">
+    <link rel="stylesheet" href="{{ url('css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ url('css/main.css')}}">
+    <link rel="stylesheet" href="{{ url('css/sl-slide.css')}}">
 
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="{{ url('js/vendor/modernizr-2.6.2-respond-1.1.0.min.js')}}"></script>
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
@@ -38,14 +38,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a id="logo" class="pull-left" href="index"></a><br>
-                
-            </div>
-        </div>
-        <div class="navbar-inner menu_list ">
-            <div class="nav-collapse collapse pull-lift">
+                <a id="logo" class="pull-left" href="{{ url('index')}} "></a><br>
+                <!-- <a id="logo" href="" class="pull-left"><h2>Omni Text Solution</h2></a> -->
+                <div class="nav-collapse collapse pull-right">
                     <ul class="nav">
-                        <li class="active"><a href="index">Home</a></li>
+                        <li class="active"><a href="{{ url('index')}} ">Home</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<i class="icon-angle-down"></i></a>
                             <ul class="dropdown-menu">
@@ -74,12 +71,10 @@
                         </li>
                     </ul>        
                 </div><!--/.nav-collapse -->
-            
+            </div>
         </div>
     </header>
     <!-- /header -->
-     
-    
     @yield('content')
 
 <!--Bottom-->
@@ -153,13 +148,13 @@
                 <div class="first">
                     <ul class="thumbnails">
                       <li class="span3">
-                        <a href="#" title="01 (254) by Victor1558, on Flickr"><img src="images/payments/payoneer.png" width="75" height="75" alt="payoneer"></a>
+                        <a href="#" title="01 (254) by Victor1558, on Flickr"><img src="{{ url('images/payments/payoneer.png')}}" width="75" height="75" alt="payoneer"></a>
                     </li>
                     <li class="span3">
-                        <a href="#" title="01 (65) by Victor1558, on Flickr"><img src="images/payments/mastercard.jpg" width="75" height="75" alt="master card"></a>
+                        <a href="#" title="01 (65) by Victor1558, on Flickr"><img src="{{ url('images/payments/mastercard.jpg')}}" width="75" height="75" alt="master card"></a>
                     </li>
                     <li class="span3">
-                        <a href="#" title="01 (65) by Victor1558, on Flickr"><img src="images/payments/visa.jpg" width="75" height="75" alt="visa card"></a>
+                        <a href="#" title="01 (65) by Victor1558, on Flickr"><img src="{{ url('images/payments/visa.jpg')}}" width="75" height="75" alt="visa card"></a>
                     </li>
                     
                     
@@ -168,13 +163,13 @@
             <div class="row-fluid">
                 <ul class="thumbnails">
                     <li class="span3">
-                        <a href="#" title="01 (65) by Victor1558, on Flickr"><img src="images/payments/skrill.png" width="75" height="75" alt="Skrill"></a>
+                        <a href="#" title="01 (65) by Victor1558, on Flickr"><img src="{{ url('images/payments/skrill.png')}}" width="75" height="75" alt="Skrill"></a>
                     </li>
                     <li class="span3">
-                        <a href="#" title="01 (65) by Victor1558, on Flickr"><img src="images/payments/paypal.png" width="75" height="75" alt="paypal"></a>
+                        <a href="#" title="01 (65) by Victor1558, on Flickr"><img src="{{ url('images/payments/paypal.png')}}" width="75" height="75" alt="paypal"></a>
                     </li>
                     <li class="span3">
-                        <a href="#" title="01 (65) by Victor1558, on Flickr"><img src="images/payments/e-sewa.png" width="75" height="75" alt="e-sewa"></a>
+                        <a href="#" title="01 (65) by Victor1558, on Flickr"><img src="{{ url('images/payments/e-sewa.png')}}" width="75" height="75" alt="e-sewa"></a>
                     </li>
                 </ul>
             </div>
@@ -245,14 +240,31 @@
     <!--/Modal Body-->
 </div>
 <!--  /Login form -->
+<!--  Register form -->
+<div class="modal hide fade in" id="registerForm" aria-hidden="false">
+    <div class="modal-header">
+        <i class="icon-remove" data-dismiss="modal" aria-hidden="true"></i>
+        <h4>Register Form</h4>
+    </div>
+    <!--Modal Body-->
+    <div class="modal-body">
+        <form class="form-inline" action="index.html" method="post" id="form-login">
+            <input type="text" class="input-small" placeholder="Email">
+            <input type="password" class="input-small" placeholder="Password">
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <!--/Modal Body-->
+</div>
+<!--  /Register form -->
 
-
-<script src="js/vendor/jquery-1.9.1.min.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+<script src="{{ url('js/vendor/jquery-1.9.1.min.js')}}"></script>
+<script src="{{ url('js/vendor/bootstrap.min.js')}}"></script>
+<script src="{{ url('js/main.js')}}"></script>
 <!-- Required javascript files for Slider -->
-<script src="js/jquery.ba-cond.min.js"></script>
-<script src="js/jquery.slitslider.js"></script>
+<script src="{{ url('js/jquery.ba-cond.min.js')}}"></script>
+<script src="{{ url('js/jquery.slitslider.js')}}"></script>
 <!-- /Required javascript files for Slider -->
 
 <!-- SL Slider -->
