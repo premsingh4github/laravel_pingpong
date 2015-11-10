@@ -31,7 +31,7 @@
     </div>
   <?php endif; ?>
   
-    <form class="center" method="POST" action="<?php echo e(url('register')); ?>">
+    <form class="center" method="POST" action="<?php echo e(url('authentication/register')); ?>">
     <?php if(Session::has('success_message')): ?>
       <div class="alert alert-success">
         <?php echo e(Session::get('success_message')); ?>

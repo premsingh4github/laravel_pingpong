@@ -31,7 +31,7 @@
     </div>
   @endif
   
-    <form class="center" method="POST" action="{{ url('register') }}">
+    <form class="center" method="POST" action="{{ url('authentication/register') }}">
     @if(Session::has('success_message'))
       <div class="alert alert-success">
         {{Session::get('success_message')}}

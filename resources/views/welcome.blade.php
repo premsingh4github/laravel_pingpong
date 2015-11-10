@@ -15,6 +15,7 @@
                         <img class="pull-right" src="images/slider/img2.png" alt="" />
                         <h2>Creative Ideas</h2>
                         <h3 class="gap">Tincidunt condimentum eros</h3>
+                        
                         <a class="btn btn-large "  href="{{ url('authentication/register') }}">Free Registration!</a>
                     </div>
                 </div>

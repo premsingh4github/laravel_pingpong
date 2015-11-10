@@ -66,9 +66,18 @@
                         <li><a href="#">Order</a></li>
                         <li><a href="#">FAQ</a></li> 
                         <li><a href="contact">Contact</a></li>
-                        <li class="login">
-                            <a data-toggle="modal" href="#loginForm"><i class="icon-lock"></i></a>
-                        </li>
+                        @if( Auth::check() )
+                            
+                            <li class="login">
+                                <a  href="{{url('/auth/logout')}}"><i class="icon-lock"></i></a>
+                            </li>
+                        @else
+                            <li class="login">
+                                <a data-toggle="modal" href="#loginForm"><i class="icon-lock"></i></a>
+                            </li>
+                        @endif
+
+                        
                     </ul>        
                 </div><!--/.nav-collapse -->
             </div>
@@ -227,9 +236,10 @@
     </div>
     <!--Modal Body-->
     <div class="modal-body">
-        <form class="form-inline" action="index.html" method="post" id="form-login">
-            <input type="text" class="input-small" placeholder="Email">
-            <input type="password" class="input-small" placeholder="Password">
+        <form class="form-inline"  method="post" id="form-login" action="{{ url('authentication/login') }}">
+            <input type="hidden" name="_token" value="{{ csrf_token()}}"> 
+            <input type="text" class="input-small" name="email" placeholder="Email">
+            <input type="password" class="input-small" name="password" placeholder="Password">
             <label class="checkbox">
                 <input type="checkbox"> Remember me
             </label>
@@ -240,24 +250,6 @@
     <!--/Modal Body-->
 </div>
 <!--  /Login form -->
-<!--  Register form -->
-<div class="modal hide fade in" id="registerForm" aria-hidden="false">
-    <div class="modal-header">
-        <i class="icon-remove" data-dismiss="modal" aria-hidden="true"></i>
-        <h4>Register Form</h4>
-    </div>
-    <!--Modal Body-->
-    <div class="modal-body">
-        <form class="form-inline" action="index.html" method="post" id="form-login">
-            <input type="text" class="input-small" placeholder="Email">
-            <input type="password" class="input-small" placeholder="Password">
-            
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-    <!--/Modal Body-->
-</div>
-<!--  /Register form -->
 
 <script src="{{ url('js/vendor/jquery-1.9.1.min.js')}}"></script>
 <script src="{{ url('js/vendor/bootstrap.min.js')}}"></script>
