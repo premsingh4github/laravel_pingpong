@@ -13,10 +13,12 @@
                 <div class="sl-slide-inner">
                     <div class="container">
                         <img class="pull-right" src="images/slider/img2.png" alt="" />
-                        <h2>Creative Ideas</h2>
-                        <!-- <h3 class="gap">Tincidunt condimentum eros</h3>
+                        <h2>Greater success
+</h2>
+                        <h3 class="gap"> with custom content .We deliver high-quality content –
+simply, quickly, and at competitive pricing.</h3>
                         
-                        <a class="btn btn-large "  href="<?php echo e(url('authentication/register')); ?>">Free Registration!</a> -->
+                        <a class="btn btn-large "  href="<?php echo e(url('authentication/register')); ?>">Free Registration!</a>
                     </div>
                 </div>
             </div>
@@ -28,26 +30,26 @@
                     <div class="container">
                         <img class="pull-right" src="images/slider/team7.png" alt="" />
                         <h2>Planning &amp; Analysis</h2>
-                        <!-- <h3 class="gap">Aenean ultricies mi vitast</h3>
-                        <a class="btn btn-large btn-transparent" href="#">Learn More</a>
-                        <a class="btn btn-large "  href="<?php echo e(url('authentication/register')); ?>">Free Registration!</a> -->
+                        <h3 class="gap">Aenean ultricies mi vitast</h3>
+                        <!-- <a class="btn btn-large btn-transparent" href="#">Learn More</a> -->
+                        <a class="btn btn-large "  href="<?php echo e(url('authentication/register')); ?>">Free Registration!</a>
                     </div>
                 </div>
             </div>
             <!--Slider Item2-->
 
             <!--Slider Item3-->
-            <div class="sl-slide item3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+            <!-- <div class="sl-slide item3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
                 <div class="sl-slide-inner">
                    <div class="container">
                     <img class="pull-right" src="images/slider/team9.png" alt="" />
                     <h2>Unique Solutions</h2>
-                    <!-- <h3 class="gap">Breatures who have been utterly</h3>
+                    <h3 class="gap">Breatures who have been utterly</h3>
                     <a class="btn btn-large btn-transparent" href="#">Learn More</a>
-                    <a class="btn btn-large "  href="<?php echo e(url('authentication/register')); ?>">Free Registration!</a> -->
+                    <a class="btn btn-large "  href="<?php echo e(url('authentication/register')); ?>">Free Registration!</a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--Slider Item3-->
 
     </div>
@@ -69,9 +71,12 @@
 <section class="main-info">
     <div class="container">
         <div class="row-fluid">
-            <div class="span9">
+            <div class="span12">
                 <h4>We serve you from all parts of the world</h4>
-                <p class="no-margin">We are  online academic writing services specialized in dissertation and thesis writing including statistical data analysis, targeting graduate, master's and Ph.D. students of all streams and countries</p>
+                <p class="no-margin">
+                    Omnitextsolution.com is a well- known online writing platform that offers the best quality writing services to all students all over the world.
+                </p>
+                <p>Our commitment to serve our customers has made us much more successful as compared to the other writing service providing companies operating online. Our customers are served by highly professional and dedicated people at every step of the transaction.</p>
             </div>
             <!-- <div class="span3">
                 <a class="btn btn-success btn-large pull-right" href="http://shapebootstrap.net">Free Download Nova</a>
@@ -220,163 +225,90 @@
 </section>
 <!--/Services-->
 
-<section id="recent-works">
-    <div class="container">
-        <div class="center">
-            <h3>Our Recent Works</h3>
-            <p class="lead">Look at some of the recent projects we have completed for our valuble clients</p>
-        </div>  
-        <div class="gap"></div>
-        <ul class="gallery col-4">
-            <!--Item 1-->
-            <li>
-                <div class="preview">
-                    <img alt=" " src="images/portfolio/thumb/item1.jpg">
-                    <div class="overlay">
-                    </div>
-                    <div class="links">
-                        <a data-toggle="modal" href="#modal-1"><i class="icon-eye-open"></i></a><a href="#"><i class="icon-link"></i></a>                          
-                    </div>
-                </div>
-                <div class="desc">
-                    <h5>Lorem ipsum dolor sit amet</h5>
-                </div>
-                <div id="modal-1" class="modal hide fade">
-                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
-                    <div class="modal-body">
-                        <img src="images/portfolio/full/item1.jpg" alt=" " width="100%" style="max-height:400px">
-                    </div>
-                </div>                 
-            </li>
-            <!--/Item 1--> 
-
-            <!--Item 2-->
-            <li>
-                <div class="preview">
-                    <img alt=" " src="images/portfolio/thumb/item2.jpg">
-                    <div class="overlay">
-                    </div>
-                    <div class="links">
-                        <a data-toggle="modal" href="#modal-1"><i class="icon-eye-open"></i></a><a href="#"><i class="icon-link"></i></a>                                
-                    </div>
-                </div>
-                <div class="desc">
-                    <h5>Lorem ipsum dolor sit amet</h5>
-                </div>
-                <div id="modal-1" class="modal hide fade">
-                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
-                    <div class="modal-body">
-                        <img src="images/portfolio/full/item2.jpg" alt=" " width="100%" style="max-height:400px">
-                    </div>
-                </div>                 
-            </li>
-            <!--/Item 2-->
-
-            <!--Item 3-->
-            <li>
-                <div class="preview">
-                    <img alt=" " src="images/portfolio/thumb/item3.jpg">
-                    <div class="overlay">
-                    </div>
-                    <div class="links">
-                        <a data-toggle="modal" href="#modal-3"><i class="icon-eye-open"></i></a><a href="#"><i class="icon-link"></i></a>                                
-                    </div>
-                </div>
-                <div class="desc">
-                    <h5>Lorem ipsum dolor sit amet</h5>
-                </div>
-                <div id="modal-3" class="modal hide fade">
-                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
-                    <div class="modal-body">
-                        <img src="images/portfolio/full/item3.jpg" alt=" " width="100%" style="max-height:400px">
-                    </div>
-                </div>                 
-            </li>
-            <!--/Item 3--> 
-
-            <!--Item 4-->
-            <li>
-                <div class="preview">
-                    <img alt=" " src="images/portfolio/thumb/item4.jpg">
-                    <div class="overlay">
-                    </div>
-                    <div class="links">
-                        <a data-toggle="modal" href="#modal-4"><i class="icon-eye-open"></i></a><a href="#"><i class="icon-link"></i></a>                                
-                    </div>
-                </div>
-                <div class="desc">
-                    <h5>Lorem ipsum dolor sit amet</h5>
-                </div>
-                <div id="modal-4" class="modal hide fade">
-                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
-                    <div class="modal-body">
-                        <img src="images/portfolio/full/item4.jpg" alt=" " width="100%" style="max-height:400px">
-                    </div>
-                </div>                 
-            </li>
-            <!--/Item 4-->               
-
-        </ul>
-    </div>
-
-</section>
-
-<section id="clients" class="main">
-    <div class="container">
-        <div class="row-fluid">
-            <div class="span2">
-                <div class="clearfix">
-                    <h4 class="pull-left">OUR PARTNERS</h4>
-                    <div class="pull-right">
-                        <a class="prev" href="#myCarousel" data-slide="prev"><i class="icon-angle-left icon-large"></i></a> <a class="next" href="#myCarousel" data-slide="next"><i class="icon-angle-right icon-large"></i></a>
-                    </div>
-                </div>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            </div>
-            <div class="span10">
-                <div id="myCarousel" class="carousel slide clients">
-                  <!-- Carousel items -->
-                  <div class="carousel-inner">
-                    <div class="active item">
-                        <div class="row-fluid">
-                            <ul class="thumbnails">
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client1.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client2.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client3.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client4.png"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="row-fluid">
-                            <ul class="thumbnails">
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client4.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client3.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client2.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client1.png"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="row-fluid">
-                            <ul class="thumbnails">
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client1.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client2.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client3.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client4.png"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Carousel items -->
-
-            </div>
+<section class="services">
+        <div class="container">
+            <div class="center gap">
+            <h3>Why Us</h3>
+            <!-- <p class="lead">Look at some of the recent projects we have completed for our valuble clients</p> -->
         </div>
-    </div>
-</div>
-</section>
+            <div class="row-fluid">
+                <div class="span4">
+                    <div class="center">
+                        <i style="font-size: 48px" class="icon-bar-chart icon-large"></i>
+                        <p> </p>
+                        <h4>Quality</h4>
+                        <p>The quality thresholds of our Thesis and Dissertations and Statistical Data Analysis are our foremost guarantee. We do not compromise, in any way, on the overriding quality aspects of our varied presentations and are sanguine that these would meet and surpass student expectations in the genre of presentations that we offer to them.</p>
+                    </div>
+                </div>
+
+                <div class="span4">
+                    <div class="center">
+                        <i style="font-size: 48px" class="icon-cog icon-large"></i>
+                        <p> </p>
+                        <h4>Pricing</h4>
+                        <p>
+                        We follow Best Industry Practices in our pricing policies and practices and shall consistently endeavor to offer the best prices that clients need to pay to buy their papers. Quality has a price and we need to abide by company rules and regulatory regimes in all matters concerning pricing and its enforcement.</p>
+                    </div>
+                </div>
+
+                <div class="span4">
+                    <div class="center">
+                        <i style="font-size: 48px" class="icon-heart icon-large"></i>
+                        <p> </p>
+                        <h4>Original Writing</h4>
+                        <p>We reaffirm that provided works are genuine writing delivered by well experienced and dedicated writers from our pool of resourceful, accomplished and dedicated writers who are well trained and experienced in all aspects of Thesis/Dissertations and Statistical Data Analysis. They take extra pains to ensure that your paper meets all needed demands and requirements.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="row-fluid">
+                <div class="span4">
+                    <div class="center">
+                        <i style="font-size: 48px" class="icon-globe icon-large"></i>
+                        <p> </p>
+                        <h4>Zero-Plagiarism Tolerance</h4>
+                        <p>
+As part of our quality drive, we do not tolerate plagiarism in any form, intentional or accidental. We firmly believe that copying the words or ideas of other authors, without due acknowledgements, constitute academic dishonesty that has no place in our kind of business, ever, and we take all possible steps that all our papers meet and surpass academic rigor.
+
+                         </p>
+                    </div>
+                </div>
+
+                <div class="span4">
+                    <div class="center">
+                        <i style="font-size: 48px" class="icon-camera icon-large"></i>
+                        <p> </p>
+                        <h4>Money-back Guarantee</h4>
+                        <p>Should the need and occasion arise, we offer to refund monies paid in the unlikely event our papers are sub standard and do not adhere to anti-plagiarism laws. Our Quality Control Department (QCD) would fully oversee such instances on case-to-case basis and their ruling shall be final and binding.</p>
+                    </div>
+                </div>
+
+                <div class="span4">
+                    <div class="center">
+                        <i style="font-size: 48px" class="icon-bullhorn icon-large"></i>
+                        <p> </p>
+                        <h4>24/7 Customer Service</h4>
+                        <p>We undertake to serve our valued and esteemed clients on 24/7 basis, as much as is reasonable, possible and tenable. Our current portfolio of clients as well as potential clients, wishing to do business with us, are always welcome to visit our websites and post their queries or messages using our inter active communication services.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="center">
+                <a class="btn btn-primary btn-large" href="#">Request a quote</a>
+            </div>
+            <p>&nbsp;</p>
+
+        </div>
+    </section>
+  
+
+
 
 
 <?php $__env->stopSection(); ?>

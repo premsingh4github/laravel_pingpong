@@ -146,6 +146,9 @@ return [
 		'App\Providers\RouteServiceProvider',
 		// for pingpong
 		'Pingpong\Modules\ModulesServiceProvider',
+		// for html and form 
+		'Illuminate\Html\HtmlServiceProvider',
+		
 	],
 
 	/*
@@ -195,6 +198,9 @@ return [
 		'View'      => 'Illuminate\Support\Facades\View',
 		// for pingpong
 		'Module' => 'Pingpong\Modules\Facades\Module',
+		// for html
+		'Html' => 'Illuminate\Html\HtmlFacade',
+		'Form' => 'Illuminate\Html\FormFacade',
 
 	],
 
