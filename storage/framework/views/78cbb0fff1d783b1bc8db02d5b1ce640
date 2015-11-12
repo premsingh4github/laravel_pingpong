@@ -69,11 +69,11 @@
                         <?php if( Auth::check() ): ?>
                             
                             <li class="login">
-                                <a  href="<?php echo e(url('/auth/logout')); ?>"><i class="icon-lock"></i></a>
+                                <a title="logout"  href="<?php echo e(url('/auth/logout')); ?>"><i class="icon-lock"></i></a>
                             </li>
                         <?php else: ?>
                             <li class="login">
-                                <a data-toggle="modal" href="#loginForm"><i class="icon-lock"></i></a>
+                                <a title="login"  href="<?php echo e(url('/authentication/login')); ?>"><i class="icon-lock"></i></a>
                             </li>
                         <?php endif; ?>
 

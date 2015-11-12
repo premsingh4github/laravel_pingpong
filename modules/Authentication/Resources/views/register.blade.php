@@ -52,6 +52,12 @@
             <input type="email" id="email" name="email" value="{{ old('email')}}" placeholder="E-mail" class="input-xlarge">
           </div>
         </div>
+        <div class="control-group">
+          <!-- E-mail -->
+          <div class="controls">
+            <input type="number" min="1000000000000" max="9999999999999" name="mobile" value="{{ old('mobile')}}" placeholder="Mobile No.(e.g. 9779811111111)" class="input-xlarge">
+          </div>
+        </div>
 
         <div class="control-group">
           <!-- Password-->

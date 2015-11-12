@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration {
 			$table->string('email')->unique();
 			$table->longText('how_know');
 			$table->string('password', 60);
+			$table->string('mobile');
 			$table->rememberToken();
 			$table->string('activation_code');
 			$table->integer('active')->default(0);

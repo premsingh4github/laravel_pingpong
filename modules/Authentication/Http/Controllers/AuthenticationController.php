@@ -21,7 +21,9 @@ class AuthenticationController extends Controller {
 		$validator = Validator::make($data->all(), [
 			'name' => 'required|max:255',
 			'email' => 'required|email|max:255|unique:users',
+			'mobile' => 'required|min:13|max:13',
 			'password' => 'required|confirmed|min:6',
+			
 		]);
 
 		if ($validator->fails())
@@ -37,6 +39,7 @@ class AuthenticationController extends Controller {
 		$user->password = bcrypt($data['password']);
 		$user->how_know = $data['how_know'];
 		$user->activation_code = $activation_code;
+		$user->mobile = $data['mobile'];
 		
 		if($user->save()){
 			

@@ -69,11 +69,11 @@
                         @if( Auth::check() )
                             
                             <li class="login">
-                                <a  href="{{url('/auth/logout')}}"><i class="icon-lock"></i></a>
+                                <a title="logout"  href="{{url('/auth/logout')}}"><i class="icon-lock"></i></a>
                             </li>
                         @else
                             <li class="login">
-                                <a data-toggle="modal" href="#loginForm"><i class="icon-lock"></i></a>
+                                <a title="login"  href="{{url('/authentication/login')}}"><i class="icon-lock"></i></a>
                             </li>
                         @endif
 
