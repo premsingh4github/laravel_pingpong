@@ -76,9 +76,9 @@
           <!-- Password -->
           <div class="controls">
             @if(old('how_know'))
-            <textarea placeholder="How do you know about us?" name="how_know"  required="required" class="input-block-level">{{ old('how_know') }}</textarea>
+            <textarea placeholder="How do you know about us?" name="how_know"   class="input-block-level">{{ old('how_know') }}</textarea>
             @else
-            <textarea placeholder="How do you know about us?" name="how_know"  required="required" class="input-block-level"></textarea>
+            <textarea placeholder="How do you know about us?" name="how_know"  class="input-block-level"></textarea>
             @endif
             
           </div>

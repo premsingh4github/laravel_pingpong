@@ -52,10 +52,10 @@ class AuthenticationController extends Controller {
 			$message = "
 				<div style='line-height:1'>
 					<div style='width:700px;margin:0 auto;margin-top:20px;padding:0px;background:#f5f5f5;border:1px solid #d2d2d2;border-radius:5px;font-family:Arial,Helvetica,sans-serif'>
-					<div style='width:700px;margin:0px;padding:20px 0px 20px 0px;back;background: saddlebrown top left repeat;border-radius:5px 5px 0px 0px;text-align:center'><img src='".url("images/logo3.png")."' ></div>
+					
 					    <div style='width:660px;margin:10px 0px 0px 0px;padding:20px;font-size:12px;color:#262626;line-height:18px'>
-					    	<p>Dear  <a href='mailto:premsingh57@gmail.com' target='_blank'>premsingh57@gmail.com</a>,</p>
-					        <p>You are receiving this email because you are requested to  create new account on Omni Text Solution. Please click on the link below to complete your confirmation.</p>
+					    	<p>Dear  <a href='mailto:{$user->email}' target='_blank'>{$user->email}</a>,</p>
+					        <p>You are receiving this email because you have requested to  create new account on Omni Text Solution. Please click on the link below to complete your conformation.</p>
 
 							<div style='text-align:center;padding:10px 0px'><a href='".url("authentication/activate/".$activation_code)."' style='font-size:14px;font-weight:bold;color:#fff;background:#2dcc70;text-decoration:none;border-radius:5px;padding:8px 15px' target='_blank'>Confirm</a></div>
 
@@ -68,13 +68,13 @@ class AuthenticationController extends Controller {
 				</div>
 			";	
 			// To send HTML mail, the Content-type header must be set
-			
+			echo $message;
 			$headers  = 'MIME-Version: 1.0' . "\r\n";
 			$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 			 $headers .= "From: donotreply@omnitext.com" . "\r\n";
 			mail($to, $subject, $message, $headers);
 
-			\Session::flash('success_message',"Activation link is send to {$data['email']}. Please activite your account");
+			\Session::flash('success_message',"Activation link is send to {$data['email']}.Just to be sure, please check your spam folder and activate your account");
 			return view('auth.register');
 		}
 		

@@ -54,7 +54,7 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Survices<i class="icon-angle-down"></i></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<i class="icon-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Our Services</a></li>
                                 <li><a href="pricing.html">Pricing</a></li>

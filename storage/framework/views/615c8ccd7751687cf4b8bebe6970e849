@@ -77,9 +77,9 @@
           <!-- Password -->
           <div class="controls">
             <?php if(old('how_know')): ?>
-            <textarea placeholder="How do you know about us?" name="how_know"  required="required" class="input-block-level"><?php echo e(old('how_know')); ?></textarea>
+            <textarea placeholder="How do you know about us?" name="how_know"   class="input-block-level"><?php echo e(old('how_know')); ?></textarea>
             <?php else: ?>
-            <textarea placeholder="How do you know about us?" name="how_know"  required="required" class="input-block-level"></textarea>
+            <textarea placeholder="How do you know about us?" name="how_know"  class="input-block-level"></textarea>
             <?php endif; ?>
             
           </div>
