@@ -14,9 +14,9 @@
                     <div class="container">
                         <img class="pull-right" src="images/slider/img2.png" alt="" />
                         <h2>Creative Ideas</h2>
-                        <h3 class="gap">Tincidunt condimentum eros</h3>
+                        <!-- <h3 class="gap">Tincidunt condimentum eros</h3>
                         
-                        <a class="btn btn-large "  href="{{ url('authentication/register') }}">Free Registration!</a>
+                        <a class="btn btn-large "  href="{{ url('authentication/register') }}">Free Registration!</a> -->
                     </div>
                 </div>
             </div>
@@ -28,9 +28,9 @@
                     <div class="container">
                         <img class="pull-right" src="images/slider/team7.png" alt="" />
                         <h2>Planning &amp; Analysis</h2>
-                        <h3 class="gap">Aenean ultricies mi vitast</h3>
-                        <!-- <a class="btn btn-large btn-transparent" href="#">Learn More</a> -->
-                        <a class="btn btn-large "  href="{{ url('authentication/register') }}">Free Registration!</a>
+                        <!-- <h3 class="gap">Aenean ultricies mi vitast</h3>
+                        <a class="btn btn-large btn-transparent" href="#">Learn More</a>
+                        <a class="btn btn-large "  href="{{ url('authentication/register') }}">Free Registration!</a> -->
                     </div>
                 </div>
             </div>
@@ -42,9 +42,9 @@
                    <div class="container">
                     <img class="pull-right" src="images/slider/team9.png" alt="" />
                     <h2>Unique Solutions</h2>
-                    <h3 class="gap">Breatures who have been utterly</h3>
-                    <!-- <a class="btn btn-large btn-transparent" href="#">Learn More</a> -->
-                    <a class="btn btn-large "  href="{{ url('authentication/register') }}">Free Registration!</a>
+                    <!-- <h3 class="gap">Breatures who have been utterly</h3>
+                    <a class="btn btn-large btn-transparent" href="#">Learn More</a>
+                    <a class="btn btn-large "  href="{{ url('authentication/register') }}">Free Registration!</a> -->
                 </div>
             </div>
         </div>
@@ -70,8 +70,8 @@
     <div class="container">
         <div class="row-fluid">
             <div class="span9">
-                <h4>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</h4>
-                <p class="no-margin">Tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet</p>
+                <h4>We serve you from all parts of the world</h4>
+                <p class="no-margin">We are  online academic writing services specialized in dissertation and thesis writing including statistical data analysis, targeting graduate, master's and Ph.D. students of all streams and countries</p>
             </div>
             <!-- <div class="span3">
                 <a class="btn btn-success btn-large pull-right" href="http://shapebootstrap.net">Free Download Nova</a>
@@ -85,17 +85,17 @@
     <div class="container">
         <div class="center gap">
             <h3>What We Offer</h3>
-            <p class="lead">Look at some of the recent projects we have completed for our valuble clients</p>
+            <!-- <p class="lead">Look at some of the recent projects we have completed for our valuble clients</p> -->
         </div>
 
-        <div class="row-fluid">
+        <!-- <div class="row-fluid">
             <div class="span4">
                 <div class="media">
                     <div class="pull-left">
                         <i class="icon-globe icon-medium"></i>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">Web Design</h4>
+                        <h4 class="media-heading">Academic writing</h4>
                         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
                     </div>
                 </div>
@@ -124,9 +124,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="gap"></div>
+        <!-- <div class="gap"></div>
 
         <div class="row-fluid">
             <div class="span4">
@@ -164,7 +164,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </div>
 </section>
