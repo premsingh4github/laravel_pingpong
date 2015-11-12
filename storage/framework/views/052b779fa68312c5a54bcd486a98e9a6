@@ -88,7 +88,7 @@
             <!-- <p class="lead">Look at some of the recent projects we have completed for our valuble clients</p> -->
         </div>
 
-        <!-- <div class="row-fluid">
+        <div class="row-fluid">
             <div class="span4">
                 <div class="media">
                     <div class="pull-left">
@@ -96,7 +96,22 @@
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">Academic writing</h4>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                        <div class="span6">
+                            <ul class="unstyled">
+                                <li><a href="#">Essay</a></li>
+                                <li><a href="#">Term Paper</a></li>
+                                <li><a href="#">Research Paper</a></li>
+                                <li><a href="#">Book Report/Review, Movie Review</a></li>
+                                <li><a href="#">Coursework</a></li>
+                                <li><a href="#">Speech/Presentation</a></li>
+                                <li><a href="#">Article</a></li>
+                                <li><a href="#">Article Critique</a></li>
+                                <li><a href="#">Annotated Bibliography</a></li>
+                                <li><a href="#">Reaction Paper</a></li>
+                                <li><a href="#">Application Paper</a></li>
+                            </ul>
+                        </div>
+                        
                     </div>
                 </div>
             </div>            
@@ -107,8 +122,18 @@
                         <i class="icon-thumbs-up-alt icon-medium"></i>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">Graphic Design</h4>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                        <h4 class="media-heading">Assignments</h4>
+                        <div class="span6">
+                            <ul class="unstyled">
+                                <li><a href="#">Case Study</a></li>
+                                <li><a href="#">Lab Report</a></li>
+                                <li><a href="#">Programming</a></li>
+                                <li><a href="#">Power Point Presentation</a></li>
+                                <li><a href="#">Math/Physics/Economics/Statistics Problems</a></li>
+                                <li><a href="#">Multiple Choice Questions</a></li>
+                                <li><a href="#">Statistics Project</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>            
@@ -119,14 +144,21 @@
                         <i class="icon-leaf icon-medium icon-rounded"></i>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">Email Marketing</h4>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                        <h4 class="media-heading">Dissertation and Thesis Services</h4>
+                        <div class="span6">
+                            <ul class="unstyled">
+                                <li><a href="#">Dissertation</a></li>
+                                <li><a href="#">Dissertation Chapter</a></li>
+                                <li><a href="#">Thesis/Research Proposal</a></li>
+                                <li><a href="#">Editing</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
-        <!-- <div class="gap"></div>
+        <div class="gap"></div>
 
         <div class="row-fluid">
             <div class="span4">
@@ -135,8 +167,16 @@
                         <i class="icon-shopping-cart icon-medium"></i>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">Ecommerce Solution</h4>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                        <h4 class="media-heading">Resume Services</h4>
+                        <div class="span6">
+                            <ul class="unstyled">
+                                <li><a href="#">Resume Writing</a></li>
+                                <li><a href="#">Resume Editing</a></li>
+                                <li><a href="#">CV Writing</a></li>
+                                <li><a href="#">CV Editing</a></li>
+                                <li><a href="#">Cover Letter</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>            
@@ -148,7 +188,12 @@
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">SEO &amp; Solution</h4>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                        <div class="span6">
+                            <ul class="unstyled">
+                                <li><a href="#">All SEO solution</a></li>
+                                <li><a href="#">SEO uptimization</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>            
@@ -159,12 +204,17 @@
                         <i class="icon-globe icon-medium"></i>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">Bootstrap</h4>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                        <h4 class="media-heading">Content Writing</h4>
+                        <div class="span6">
+                            <ul class="unstyled">
+                                <li><a href="#">All type of content writing</a></li>
+                            </ul>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
     </div>
 </section>
